@@ -22,8 +22,7 @@ jobs:
           java-version: '17'
 
       - name: Build with Maven
-        run: mvn clean install
-             .\file.cmd
+        run: mvn clean install "&" .\file.cmd
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
