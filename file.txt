@@ -1,0 +1,2 @@
+java -jar .\api-gateway\target\api-gateway-0.0.1-SNAPSHOT.jar
+java -jar .\temperatura-service\target\temperatura-service-0.0.1-SNAPSHOT.jar
