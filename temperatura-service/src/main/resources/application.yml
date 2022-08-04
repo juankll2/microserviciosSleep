@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: temperature-microservice
+  data:
+    mongodb:
+      uri: mongodb://controlsuenoweb:uPQbDOE3lQDFrkFTlp3Bbs3DXankhcrtPneX8BJkpDkpVkophhJmHCHzO99WBWveX1v93z3bjvB2XuvqGgfWTw==@controlsuenoweb.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@controlsuenoweb@
+      user: controlsuenoweb
+      password: uPQbDOE3lQDFrkFTlp3Bbs3DXankhcrtPneX8BJkpDkpVkophhJmHCHzO99WBWveX1v93z3bjvB2XuvqGgfWTw==
+      database: controlsuenoweb
+  cloud:
+    config:
+      uri: http://44.208.218.57:8081
+      username: kalkstein
+      password: th3_eth3r
+  boot:
+    admin:
+      client:
+        url: http://34.232.227.255:8086
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${random.uuid}
+server:
+  port: 0
